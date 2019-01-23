@@ -185,7 +185,7 @@
 
 <p>스토리를 작성하기에 앞서 Shinydashboard는 R에서 wep application을 구현하게 하는 패키지인 shiny기능을 활용하여 대시보드로 쉽게 구현이 가능하게 해주는 패키지(package) 입니다. 그래서, shinydashboard를 구현하기 이전에 shiny의 기본 구조를 이해한다면, 한결 빠르고 쉽게 구현이 가능합니다. 그럼 shiny의 기본 구현방법을 알아볼게요. shiny는 기본적으로 ui와 server로 구현되어 있습니다.</p>
 <div class="figure">
-<img src="/post/2019-01-22-rshinydashboard-storyboard-2_files/shiny_ui_server.png" />
+<img src="/blog/post/2019-01-22-rshinydashboard-storyboard-2_files/shiny_ui_server.png" />
 
 </div>
 <p>ui에서 입력을 하면, server에서 ui에서 받은 입력으로 실행을 하는데요, 기본 코드는 아래와 같습니다. (아래 코드는 shiny 기본 페이지에서 가져왔습니다. <strong>링크: <a href="https://shiny.rstudio.com/articles/basics.html">바로가기</a></strong> )</p>
@@ -246,12 +246,12 @@ ui &lt;- fluidPage(
 <p><strong>shiny 구현 </strong></p>
 <pre><code>shinyApp(ui, server)</code></pre>
 <div class="figure">
-<img src="/post/2019-01-22-rshinydashboard-storyboard-2_files/shiny.gif" />
+<img src="/blog/post/2019-01-22-rshinydashboard-storyboard-2_files/shiny.gif" />
 
 </div>
 <p>하지만, 위에서도 언급된 것 처럼 shiny로 대시보드를 구현하기엔 너무나 많은 일을 거쳐야하는 불편함이 따릅니다. 그래서 저는 shinydashboard를 활용해서 조금더 쉽게 구현을 해보고자 합니다.</p>
 <div class="figure">
-<img src="/post/2019-01-22-rshinydashboard-storyboard-2_files/Next-Steps-LOGO.png" style="width:80.0%" />
+<img src="/blog/post/2019-01-22-rshinydashboard-storyboard-2_files/Next-Steps-LOGO.png" style="width:80.0%" />
 
 </div>
 
