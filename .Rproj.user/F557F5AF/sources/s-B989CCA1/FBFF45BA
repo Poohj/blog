@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1548223263198.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FBFF45BA",
+    "lastKnownWriteTime" : 1548232514,
+    "last_content_update" : 1548232514035,
+    "path" : "C:/Users/hjlee0501/Desktop/blog_project/config.toml",
+    "project_path" : "config.toml",
+    "properties" : {
+        "cursorPosition" : "21,18",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "toml"
+}
