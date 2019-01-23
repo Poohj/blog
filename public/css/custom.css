@@ -1,0 +1,16 @@
+#blog-pager-newer-link {
+display: none;
+}
+#blog-pager-older-link {
+display: none;
+}
+#blog-pager {
+display: none;
+}
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+code {
+  font-family: "Courier New", Courier, monospace;
+}

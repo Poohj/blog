@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta name="generator" content="Hugo 0.53" /><head>
+    <meta name="google-site-verification" content="9vIieCe-Qpd78QOmBl63rGtIVbhY6sYyuxX3j8XWBA4" />
+    <meta name="baidu-site-verification" content="LRrmH41lz7" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="A website built through Hugo and blogdown.">
+    
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/blog/images/bear.jpg">
+
+    <title>Data Glory-</title>
+
+    <link rel="canonical" href="/blog">
+
+    <link rel="stylesheet" href="/blog/css/iDisqus.min.css"/>
+	
+    
+    <link rel="stylesheet" href="/blog/css/bootstrap.min.css">
+
+    
+    <link rel="stylesheet" href="/blog/css/hux-blog.min.css">
+
+    
+    <link rel="stylesheet" href="/blog/css/syntax.css">
+
+    
+    <link rel="stylesheet" href="/blog/css/zanshang.css">
+
+    
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <script src="/blog/js/jquery.min.js"></script>
+    
+    
+    <script src="/blog/js/bootstrap.min.js"></script>
+    
+    
+    <script src="/blog/js/hux-blog.min.js"></script>
+	
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/docco.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+</head>
+
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://poohj.github.io/blog/">Data Glory</a>
+        </div>
+
+        
+        
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="https://poohj.github.io/blog/">Home</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/blog/categories/r">r</a>
+                    </li>
+                    
+                    
+		    
+                        <li><a href="/about/">ABOUT</a></li>
+                    
+
+                    
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    
+</nav>
+<script>
+    
+    
+    
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        
+            $navbar.className = " ";
+            
+            setTimeout(function(){
+                
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+
+<header class="intro-header" style="background-image: url('/blog/images/bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
+                <div class="site-heading">
+                     <h1>Data Glory </h1> 
+                    
+		    <span class="subheading"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+  
+<div class="container">
+    <div class="row">
+        
+        
+   	    <div class="
+            col-lg-8 col-lg-offset-1
+            col-md-8 col-md-offset-1
+            col-sm-12
+            col-xs-12
+            post-container
+        ">
+            
+
+<div class="post-preview">
+    <a href="/blog/post/rshinydashboard-storyboard-2/">
+        <h2 class="post-title">
+            Rshinydashboard_storyboard(2)
+        </h2>
+	
+        <h3 class="post-subtitle">
+            R shiny의 기본구조
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            스토리를 작성하기에 앞서 Shinydashboard는 R에서 wep application을 구현하게 하는 패키지인 shiny기능을 활용하여 대시보드로 쉽게 구현이 가능하게 해주는 패키지(package) 입니다. 그래서, shinydashboard를 구현하기 이전에 shiny의 기본 구조를 이해한다면, 한결 빠르고 쉽게 구현이 가능합니다. 그럼 shiny의 기본 구현방법을 알아볼게요. shiny는 기본적으로 ui와 server로 구현되어 있습니다.
+ui에서 입력을 하면, server에서 ui에서 받은 입력으로 실행을 하는데요, 기본 코드는 아래와 같습니다. (아래 코드는 shiny 기본 페이지에서 가져왔습니다. 링크: 바로가기 )
+ui영역 예시
+# Define UI for app that draws a histogram ----ui &lt;- fluidPage(titlePanel(&quot;안녕하세요&quot;), #타이틀 입력## 사이드바 영역에 sliderInput 만들기#사이드바 레이아웃 선언sidebarLayout( ##사이드바 패널에 들어갈 내용 생성sidebarPanel( # sliderInput 생성 sliderInput(inputId = &quot;bins&quot;,label = &quot;Number of bins:&quot;,min = 1,max = 50,value = 30)),# 메인 패널에 들어갈 내용 생성 mainPanel(# 히스토그램 구현하기plotOutput(outputId = &quot;distPlot&quot;))))server 영역 예시
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by Poohj Tuesday, January 22, 2019
+    </p>
+</div>
+<hr>
+
+<div class="post-preview">
+    <a href="/blog/post/2019-01-21-rshinydashboard-storyboard/">
+        <h2 class="post-title">
+            Rshinydashboard_storyboard(1)
+        </h2>
+	
+        <h3 class="post-subtitle">
+            R shinydashboard를 알게 된 배경
+        </h3>
+	
+        <div class="post-content-preview">
+	
+            데이터 분석 업무를 하다보면, 유관부서와 협업을 해야하는 상황이 발생하는 일이 생깁니다. 저의 경우에는, 서비스영역의 유관업무분들(사업,마케팅,기획 등등)과 협업을 하는 상황이 거의 대부분이었던 것 같습니다.(물론 개발영역에서 종사하시는 분들과도 협업을 수행합니다.)
+보통 분석업무를 하다보면, 유관부서에서 서비스한 부분에 대해서 Ad-hoc하게 봐야하는 부분이 있습니다. 이런 부분에서 수동으로 작업을 하기보단 자동으로 작업을 하는 부분이 오히려 분석하는 입장에서 수월한 부분이 있습니다.
+예를들어, 주기적으로 봐야하는 사업지표, 이벤트 발생 후 사후변화관련 차트 등은 분석을 하기보단 시그널을 확인하기위한 작업이지만, 현업에서는 굉장히 중요한 일 중에 하나입니다.
+       
+        </div>
+    </a>
+    <p class="post-meta">
+    Posted by Poohj Monday, January 21, 2019
+    </p>
+</div>
+<hr>
+
+
+            
+
+
+
+       	</div>
+        
+
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+    
+    <section>
+        <hr class="hidden-sm hidden-xs">
+        <h5>FEATURED TAGS</h5>
+        <div class="tags">
+             
+            
+                
+                    <a href="/blog/tags/shinydashboard" title="shinydashboard">
+                        shinydashboard
+                    </a>
+                
+            
+                
+                    <a href="/blog/tags/visualization" title="visualization">
+                        visualization
+                    </a>
+                
+            
+        </div>
+    </section>
+    
+
+    
+    <section class="visible-md visible-lg">
+        <hr><h5><a href="">ABOUT ME</a></h5>
+        <div class="short-about">
+            
+            <img src="/blog/images/bear.jpg" />
+            
+            
+                <p>Data Analyst, Data Scientist</p>
+            
+           
+           <ul class="list-inline"> 
+               
+               
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://www.facebook.com/hoyee87?ref=bookmarks">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+               <li>
+                   <a target="_blank" href="https://github.com/Poohj/blog">
+                       <span class="fa-stack fa-lg">
+                           <i class="fa fa-circle fa-stack-2x"></i>
+                           <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                       </span>
+                   </a>
+               </li>
+               
+               
+               
+                </ul>
+            </div>
+    </section>
+    
+    
+
+    
+    
+    <section>
+        <hr>
+        <h5>BOOKMARKS</h5>
+        <ul class="list-inline">
+            
+            <li><a target="_blank" href="https://www.r-bloggers.com/">R-bloggers</a></li>
+            
+        </ul>
+    </section>
+    
+</div>
+
+	</div>
+</div>
+
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                   
+                    
+                    <li>
+                        <a href="mailto:dataservicewell@gmail.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                    
+                    
+
+                    
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/hoyee87?ref=bookmarks">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+
+		    
+                    
+                    
+                    <li>
+                        <a target="_blank" href="https://github.com/Poohj/blog">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+		    
+                    
+                    
+                </ul>
+		<p class="copyright text-muted">
+                    Copyright &copy; Data Glory , 2019
+                    <br>
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=Poohj&repo=blogdown&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+
+
+
+
+
+<script>
+    
+    if($('#tag_cloud').length !== 0){
+        async("/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+
+<script>
+    async("https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+       bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+      }
+      else{
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+      }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-48398271-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+</body>
+</html>

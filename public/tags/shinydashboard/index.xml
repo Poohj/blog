@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shinydashboard on Data Glory</title>
+    <link>/blog/tags/shinydashboard/</link>
+    <description>Recent content in Shinydashboard on Data Glory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/tags/shinydashboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rshinydashboard_storyboard(2)</title>
+      <link>/blog/post/rshinydashboard-storyboard-2/</link>
+      <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/post/rshinydashboard-storyboard-2/</guid>
+      <description>스토리를 작성하기에 앞서 Shinydashboard는 R에서 wep application을 구현하게 하는 패키지인 shiny기능을 활용하여 대시보드로 쉽게 구현이 가능하게 해주는 패키지(package) 입니다. 그래서, shinydashboard를 구현하기 이전에 shiny의 기본 구조를 이해한다면, 한결 빠르고 쉽게 구현이 가능합니다. 그럼 shiny의 기본 구현방법을 알아볼게요. shiny는 기본적으로 ui와 server로 구현되어 있습니다.
+ui에서 입력을 하면, server에서 ui에서 받은 입력으로 실행을 하는데요, 기본 코드는 아래와 같습니다. (아래 코드는 shiny 기본 페이지에서 가져왔습니다. 링크: 바로가기 )
+ui영역 예시
+# Define UI for app that draws a histogram ----ui &amp;lt;- fluidPage(titlePanel(&amp;quot;안녕하세요&amp;quot;), #타이틀 입력## 사이드바 영역에 sliderInput 만들기#사이드바 레이아웃 선언sidebarLayout( ##사이드바 패널에 들어갈 내용 생성sidebarPanel( # sliderInput 생성 sliderInput(inputId = &amp;quot;bins&amp;quot;,label = &amp;quot;Number of bins:&amp;quot;,min = 1,max = 50,value = 30)),# 메인 패널에 들어갈 내용 생성 mainPanel(# 히스토그램 구현하기plotOutput(outputId = &amp;quot;distPlot&amp;quot;))))server 영역 예시</description>
+    </item>
+    
+    <item>
+      <title>Rshinydashboard_storyboard(1)</title>
+      <link>/blog/post/2019-01-21-rshinydashboard-storyboard/</link>
+      <pubDate>Mon, 21 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/post/2019-01-21-rshinydashboard-storyboard/</guid>
+      <description>데이터 분석 업무를 하다보면, 유관부서와 협업을 해야하는 상황이 발생하는 일이 생깁니다. 저의 경우에는, 서비스영역의 유관업무분들(사업,마케팅,기획 등등)과 협업을 하는 상황이 거의 대부분이었던 것 같습니다.(물론 개발영역에서 종사하시는 분들과도 협업을 수행합니다.)
+보통 분석업무를 하다보면, 유관부서에서 서비스한 부분에 대해서 Ad-hoc하게 봐야하는 부분이 있습니다. 이런 부분에서 수동으로 작업을 하기보단 자동으로 작업을 하는 부분이 오히려 분석하는 입장에서 수월한 부분이 있습니다.
+예를들어, 주기적으로 봐야하는 사업지표, 이벤트 발생 후 사후변화관련 차트 등은 분석을 하기보단 시그널을 확인하기위한 작업이지만, 현업에서는 굉장히 중요한 일 중에 하나입니다.</description>
+    </item>
+    
+  </channel>
+</rss>

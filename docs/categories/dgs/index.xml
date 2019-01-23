@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dgs on Data Glory</title>
+    <link>/blog/categories/dgs/</link>
+    <description>Recent content in Dgs on Data Glory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 23 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/categories/dgs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>test</title>
+      <link>/blog/post/test/</link>
+      <pubDate>Wed, 23 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/post/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
