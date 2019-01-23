@@ -1,0 +1,90 @@
+baseurl = "https://poohj.github.io/blog/" 
+publishDir = "docs"
+languageCode = "en-us"
+title = "Data Glory"
+theme = "hugo-theme-cleanwhite" 
+googleAnalytics = "UA-48398271-1"
+# Enable comments by entering your Disqus shortname
+disqusShortname = "dataglory"
+#preserveTaxonomyNames = true
+#hasCJKLanguage = true 
+DefaultContentLanguage = "en" 
+
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"] 
+
+[permalinks]   
+    #post = "/post/:slug/"
+    #tags = "/tags/:slug/"
+    #categories = "/categories/:slug/"
+
+
+################# 
+### menu info ###  
+#################
+
+  [[params.addtional_menus]]
+  title =  "ABOUT"
+  href =  "/about/" 
+
+  [params]
+  
+  description = "A website built through Hugo and blogdown."
+  DateForm = "Mon, Jan 2, 2006"
+
+  postSummariesFrontPage = 4 #Number of post summaries to show on front page, comment out to allow default(4)
+  
+  header_image = "/images/bg.jpg"
+  favicon = "/images/bear.jpg"
+  #image_404 = "/images/bg.jpg" 
+  #title_404 = "你来到了没有知识的荒原 :("
+  
+  
+   # We need a proxy to access Disqus api in China
+  # Follow https://github.com/zhaohuabing/disqus-php-api to set up your own disqus proxy
+  disqus_proxy = ""
+  disqus_site = "https://poohj.github.io/blog"
+  
+
+  # Sidebar settings 
+  sidebar_about_description = "Data Analyst, Data Scientist"
+  #sidebar_avatar = "img/avatar-zhaohuabing.jpg"      # use absolute URL, seeing it's used in both `/` and `/about/`
+  sidebar_avatar = "/images/bear.jpg"       # use absolute URL, seeing it's used in both `/` and `/about/`
+  
+  # tag addition
+  
+  featured_tags = true 
+  featured_condition_size = 0 
+  
+
+  # This will load all the CSS defined in the list
+  #customCSS = ["/static/css/custom.css"]
+
+   #Enable wechat pay & alipay to allow readers send reward money if they like the articles 
+  #reward = true 
+  friends = false
+  bookmarks = true
+  about_me = true
+
+
+  #################
+  ## social info ## 
+  #################
+  
+  [params.social]
+  email    = "dataservicewell@gmail.com"
+  facebook = "https://www.facebook.com/hoyee87?ref=bookmarks"
+  github   = "https://github.com/Poohj/blog"
+  
+
+  #[[params.friend_link]]
+  #title = "Linda的博客"
+  #href =  "https://zhaozhihan.com"
+
+  [[params.bookmark_link]]
+  title =  "R-bloggers"
+  href =  "https://www.r-bloggers.com/"
+  
+  
+  
+  

@@ -1,0 +1,36 @@
+---
+title: Rshinydashboard_storyboard(1)
+author: Poohj 
+date: '2019-01-21'
+categories: 
+  - R
+tags:
+  - shinydashboard
+  - visualization 
+subtitle: 'R shinydashboard를 알게 된 배경'
+description: ''
+image: '/images/blue.jpg'
+--- 
+
+데이터 분석 업무를 하다보면, 유관부서와 협업을 해야하는 상황이 발생하는 일이 생깁니다. 저의 경우에는, 서비스영역의 유관업무분들(사업,마케팅,기획 등등)과 협업을 하는 상황이 거의 대부분이었던 것 같습니다.(물론 개발영역에서 종사하시는 분들과도 협업을 수행합니다.)
+
+보통 분석업무를 하다보면, 유관부서에서 서비스한 부분에 대해서 Ad-hoc하게 봐야하는 부분이 있습니다. 이런 부분에서 수동으로 작업을 하기보단 자동으로 작업을 하는 부분이 오히려 분석하는 입장에서 수월한 부분이 있습니다. 
+
+예를들어, 주기적으로 봐야하는 사업지표, 이벤트 발생 후 사후변화관련 차트 등은 분석을 하기보단 시그널을 확인하기위한 작업이지만, 현업에서는 굉장히 중요한 일 중에 하나입니다.
+
+하지만, 해당 부분을 수행하기 위해선 개발, 데이터 분석 및 집계 기획 등의 업무가 동시에 수행 되어야합니다. 이 부분에 있어 개발영역과 서비스 영역의 다리 역할을 하는 영역이 데이터 영역입니다. 
+
+![](/blog/post/2019-01-21-rshinydashboard-storyboard_files/connect_1.png){width=80%}
+
+
+위에서 언급한 동시 수행 업무가 매끄럽게 진행이 된다면 너무나 행복하겠지만, 세상일은 언제나 내 맘대로 되는 법은 없지요.
+
+각 부서의 업무 리소스에 맞게 업무속도를 맞추다 보면, 데이터 관련 직군은 대부분 대응속도가 늦게 됩니다. 이 부분에 있어 어떻게 하면 손쉽게 가능한 방법이 없을까 고민을 많이 했습니다.
+
+고민중에 알게 된 것이 **R shinydashboard** 였습니다. < [바로가기](https://rstudio.github.io/shinydashboard/) >
+
+![shinydashboard 예시](/blog/post/2019-01-21-rshinydashboard-storyboard_files/dashboard.png) 
+
+해당 페이지를 구현한다면, 유관부서의 업무 리소스에 조금이나마 덜 영향 받으면서 업무를 수행할 수 있을 것이라 생각하였습니다. 그리고, 수동으로 봐야했던 차트등을 자동화 하여 업무 리소스를 줄일 수 있는 부분도 있다고 생각했습니다. 그리하여, 제 첫 Shiinydashboard는 이렇게 시작이 됩니다. 
+
+![](/blog/post/2019-01-21-rshinydashboard-storyboard_files/start.png){width=80%}
