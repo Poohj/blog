@@ -32,6 +32,6 @@ image: '/images/blue.jpg'
 
 ![shinydashboard 예시](/blog/post/2019-01-21-rshinydashboard-storyboard_files/dashboard.png) 
 
-해당 페이지를 구현한다면, 유관부서의 업무 리소스에 조금이나마 덜 영향 받으면서 업무를 수행할 수 있을 것이라 생각하였습니다. 그리고, 수동으로 봐야했던 차트등을 자동화 하여 업무 리소스를 줄일 수 있는 부분도 있다고 생각했습니다. 그리하여, 제 첫 Shiinydashboard는 이렇게 시작이 됩니다. 
+해당 페이지를 구현한다면, 유관부서의 업무 리소스에 조금이나마 덜 영향 받으면서 업무를 수행할 수 있을 것이라 생각하였습니다. 그리고, 수동으로 봐야했던 차트등을 자동화 하여 업무 리소스를 줄일 수 있는 부분도 있다고 생각했습니다. 그리하여, 제 첫 Shinydashboard는 이렇게 시작이 됩니다. 
 
 ![](/blog/post/2019-01-21-rshinydashboard-storyboard_files/start.png){width=80%}
