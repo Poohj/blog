@@ -1,6 +1,44 @@
 ---
-date: "2016-05-05T21:48:51-07:00"
-title: About
+title: "About Me"
+Date: '2019-01-28'
+image: /images/report.jpg
+Author: 'Poohj'
 ---
 
-This is a "hello world" example website for the [**blogdown**](https://github.com/rstudio/blogdown) package. The theme was forked from [@jrutheiser/hugo-lithium-theme](https://github.com/jrutheiser/hugo-lithium-theme) and modified by [Yihui Xie](https://github.com/yihui/hugo-lithium).
+# Who Am I?
+
+데이터 분석을 활용하여 실무에 어떻게 하면 쉽게 적용할지 고민하는 분석가입니다.
+
+통계학 석사를 전공하였으며, 여러 구분 없이 데이터와 관련된 곳이라면 관심을 가지는 성향을 보유하고 있습니다.
+
+분석을 수행하는데 있어 R, Python , Excel 등 구현하는데 있어서 개인적으론 본인이 잘 활용할 수 있는 Tool을 사용하는게 좋다고 생각하고 있습니다. 
+
+하둡환경, RDBMS 환경등 여러 환경에서 데이터 수행 경험을 보유하고 있으며, 비즈니스 분석 & 통계적 모델링의 경험도 함께 보유하고 있습니다. 
+
+많이 미흡하지만, 더 성장하기 위해 노력하고 있습니다.
+
+스포츠 경기 관람, 넷플릭스 시청 등으로 여가생활을 즐기고 있습니다.
+
+![](/blog/about_files/about_me.png)
+
+
+# 기타 경력
+
+1. 수상경력 
+    1. 2012-08 // 제 1 회 미니탭 포스터 대회 은상(주최:이레테크)
+    2. 2012-10 // 제 1 회 Bigdata analysis 분석대회 은상(주최:Unist)
+    3. 2013-07 // 제 1 회 관광마이닝 대회 동상(주최: 한국문화관광연구원)
+    4. 2013-11 // 추계 학술논문발표회 대학원생 포스터논문상 2 등 ( 주최: 한국통계학회)
+
+2. 강연 경력
+
+    1. 2016-03 // R 을 활용한 확률론 및 선형대수 강의 (주최: 패스트캠퍼스)
+    2. 2016-05 // 엑셀을 활용한 기초통계학 강의(주최: 패스트캠퍼스 & 티켓몬스터)
+    3. 2016-08 // 현업에서의 데이터분석 특강(주최 : 패스트캠퍼스 & 삼성화재)
+    4. 2016-11 // 엑셀을 활용한 기초통계학 실습강의(주최 : 패스트캠퍼스)
+    5. 2017-10 // UseR 2017 Korea – Rshinydashboard 를 활용한 대시보드 구현 발표 (주최 : KRUG, 장소 : 서울대 통계학과)
+        - slideshare : [바로가기](https://www.slideshare.net/r-kor/ruck-2017-interactive-chart) 
+        - Git repository : [바로가기](https://github.com/Poohj/Rshinydashboard_Template_2017_userkorea)
+        
+
+ 

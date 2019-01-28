@@ -1,4 +1,4 @@
-baseurl = "https://poohj.github.io/blog/" 
+baseurl = "https://poohj.github.io/blog/"  
 publishDir = "docs"
 languageCode = "en-us"
 title = "Data Glory"
@@ -8,7 +8,7 @@ googleAnalytics = "UA-48398271-1"
 disqusShortname = "dataglory"
 #preserveTaxonomyNames = true
 #hasCJKLanguage = true 
-DefaultContentLanguage = "en" 
+DefaultContentLanguage = "en"  
 
 
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"] 
@@ -20,7 +20,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 
 ################# 
-### menu info ###  
+### menu info ###   
 #################
 
   [[params.addtional_menus]]
@@ -84,6 +84,12 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
   [[params.bookmark_link]]
   title =  "R-bloggers"
   href =  "https://www.r-bloggers.com/"
+  
+    [[params.bookmark_link]]
+  title =  "KD nuggets"
+  href =  "https://www.kdnuggets.com/"
+  
+  
   
   
   

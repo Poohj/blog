@@ -6,10 +6,23 @@
     <description>Recent content on Data Glory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 28 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About Me</title>
+      <link>/blog/about/</link>
+      <pubDate>Mon, 28 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/about/</guid>
+      <description>Who Am I? 데이터 분석을 활용하여 실무에 어떻게 하면 쉽게 적용할지 고민하는 분석가입니다.
+통계학 석사를 전공하였으며, 여러 구분 없이 데이터와 관련된 곳이라면 관심을 가지는 성향을 보유하고 있습니다.
+분석을 수행하는데 있어 R, Python , Excel 등 구현하는데 있어서 개인적으론 본인이 잘 활용할 수 있는 Tool을 사용하는게 좋다고 생각하고 있습니다.
+하둡환경, RDBMS 환경등 여러 환경에서 데이터 수행 경험을 보유하고 있으며, 비즈니스 분석 &amp;amp; 통계적 모델링의 경험도 함께 보유하고 있습니다.
+많이 미흡하지만, 더 성장하기 위해 노력하고 있습니다.</description>
+    </item>
     
     <item>
       <title>Rshinydashboard_storyboard(2)</title>
@@ -32,15 +45,6 @@ ui영역 예시
       <description>데이터 분석 업무를 하다보면, 유관부서와 협업을 해야하는 상황이 발생하는 일이 생깁니다. 저의 경우에는, 서비스영역의 유관업무분들(사업,마케팅,기획 등등)과 협업을 하는 상황이 거의 대부분이었던 것 같습니다.(물론 개발영역에서 종사하시는 분들과도 협업을 수행합니다.)
 보통 분석업무를 하다보면, 유관부서에서 서비스한 부분에 대해서 Ad-hoc하게 봐야하는 부분이 있습니다. 이런 부분에서 수동으로 작업을 하기보단 자동으로 작업을 하는 부분이 오히려 분석하는 입장에서 수월한 부분이 있습니다.
 예를들어, 주기적으로 봐야하는 사업지표, 이벤트 발생 후 사후변화관련 차트 등은 분석을 하기보단 시그널을 확인하기위한 작업이지만, 현업에서는 굉장히 중요한 일 중에 하나입니다.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>/blog/about/</link>
-      <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
-      
-      <guid>/blog/about/</guid>
-      <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
     </item>
     
   </channel>
