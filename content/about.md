@@ -41,7 +41,7 @@ Author: 'Poohj'
     3. 2016-08 // 현업에서의 데이터분석 특강(주최 : 패스트캠퍼스 & 삼성화재)
     4. 2016-11 // 엑셀을 활용한 기초통계학 실습강의(주최 : 패스트캠퍼스)
     5. 2017-10 // UseR 2017 Korea – Rshinydashboard 를 활용한 대시보드 구현 발표 (주최 : KRUG, 장소 : 서울대 통계학과)
-        - slideshare : [바로가기](https://www.slideshare.net/r-kor/ruck-2017-interactive-chart) 
+        - slideshare : [바로가기](https://www.slideshare.net/r-kor/ruck-2017-interactive-chart)
         - Git repository : [바로가기](https://github.com/Poohj/Rshinydashboard_Template_2017_userkorea)
         
 
