@@ -1,5 +1,5 @@
 baseurl = "https://poohj.github.io/blog/"  
-publishDir = "public"
+publishDir = "docs" 
 languageCode = "en-us"
 title = "Data Glory"
 theme = "hugo-theme-cleanwhite" 
