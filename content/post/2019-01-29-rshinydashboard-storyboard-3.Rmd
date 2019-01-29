@@ -36,7 +36,6 @@ Header 영역은 Title 및 위젯등을 추가가능하며, sidebar영역은 보
 
 ![](/blog/post/2019-01-29-rshinydashboard-storyboard-3_files/shinydashboard_sector.png)
 
-
 Shiny vs Rshinydashboard
 ------------
 
