@@ -161,3 +161,8 @@ server <- function(input, output) {
 shinyApp(ui, server)
 ```
 
+마지막으로 아래 링크로 shinydashboard에 대한 자세한 내용을 확인 하실 수 있습니다.
+
+**링크: [shinydashboard Get started 바로가기](https://rstudio.github.io/shinydashboard/get_started.html)** 
+
+
