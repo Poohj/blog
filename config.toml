@@ -1,5 +1,5 @@
 baseurl = "https://poohj.github.io/blog/"  
-publishDir = "docs"
+publishDir = "public"
 languageCode = "en-us"
 title = "Data Glory"
 theme = "hugo-theme-cleanwhite" 
@@ -34,7 +34,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
   postSummariesFrontPage = 4 #Number of post summaries to show on front page, comment out to allow default(4)
   
-  header_image = "/images/bg.jpg"
+  header_image = "/images/sun.jpg"
   favicon = "/images/bear.jpg"
   #image_404 = "/images/bg.jpg" 
   #title_404 = "你来到了没有知识的荒原 :("
