@@ -29,23 +29,23 @@ theme_set(theme_gray(base_family='NanumGothic'))
 
 # load data
 
-data.path = "report-thejsoo-20191029"
+data.path = "./content/post/report-thejsoo-20191029"
 
-ad.page = read.csv(file.path("data", data.path, "모아보기탭 방문자수.csv"), stringsAsFactors = F, header = T)
+ad.page = read.csv(file.path(data.path, "모아보기탭 방문자수.csv"), stringsAsFactors = F, header = T)
 ad.page$date_no = as.Date(ad.page$date_no)
 
-event.page = read.csv(file.path("data", data.path, "더제이수 페이지 pv_uv.csv"), stringsAsFactors = F, header = T)
+event.page = read.csv(file.path(data.path, "더제이수 페이지 pv_uv.csv"), stringsAsFactors = F, header = T)
 event.page$date_no = as.Date(event.page$date_no)
 
-event.page_vs = read.csv(file.path("data", data.path, "트렌드어패럴 vs 메리어라운드 vs 엔비룩 vs 더제이수.csv"), stringsAsFactors = F, header = T)
+event.page_vs = read.csv(file.path(data.path, "트렌드어패럴 vs 메리어라운드 vs 엔비룩 vs 더제이수.csv"), stringsAsFactors = F, header = T)
 event.page_vs$date_no = as.Date(event.page_vs$date_no)
 
 
 
-shop_dailies_thejsoo = read.csv(file.path("data", data.path, "더제이수 쇼핑몰 페이지 PV_UV(경쟁사 포함).csv"), stringsAsFactors = F, header = T)
+shop_dailies_thejsoo = read.csv(file.path(data.path, "더제이수 쇼핑몰 페이지 PV_UV(경쟁사 포함).csv"), stringsAsFactors = F, header = T)
 shop_dailies_thejsoo$date_simple = as.Date(shop_dailies_thejsoo$date_simple)
 
-orders.thejsoo = read.csv(file.path("data", data.path, "더제이수 쇼핑몰 주문액(경쟁사 포함).csv"), stringsAsFactors = F, header = T)
+orders.thejsoo = read.csv(file.path(data.path, "더제이수 쇼핑몰 주문액(경쟁사 포함).csv"), stringsAsFactors = F, header = T)
 orders.thejsoo$date_paid_simple = as.Date(orders.thejsoo$date_paid_simple)
 
 
