@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Data Glory</title>
@@ -17,11 +17,11 @@
       <pubDate>Tue, 29 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/post/2019-01-29-rshinydashboard-storyboard-3/</guid>
-      <description>Rshinydashboard 설치Rshinydashboard는 shiny 패키지(ver. &amp;gt;=0.11)가 존재해야 설치가 가능하며, 설치명령문은 아래와 같습니다.
-install.packages(&amp;quot;shinydashboard&amp;quot;)Rshinydashboard 기본화면Rshinydashboard는 Header, sidebar, Body영역 등 3개 영역으로 나누어 구성됩니다.
+      <description>Rshinydashboard 설치 Rshinydashboard는 shiny 패키지(ver. &amp;gt;=0.11)가 존재해야 설치가 가능하며, 설치명령문은 아래와 같습니다.
+install.packages(&amp;quot;shinydashboard&amp;quot;)  Rshinydashboard 기본화면 Rshinydashboard는 Header, sidebar, Body영역 등 3개 영역으로 나누어 구성됩니다.
 Header 영역은 Title 및 위젯등을 추가가능하며, sidebar영역은 보여주고자하는 컨텐츠를 영역으로 생성할 수 있습니다.(ex. A라는 회사의 전체 매출도 보고싶지만, 일별, 주별, 월별 내용을 보고싶다면 하위메뉴로 나누어 생성할 수 있습니다.)
 마지막으로 Body영역은 차트 및 테이블등 보여주고 싶은 내용을 꾸밀 수 있습니다.
-Shiny vs Rshinydashboardshiny의 경우엔 navigation 옵션으로 설정해서 영역을 나눠야 하는 불편함이 있지만, shinydashboard는 해당 부분을 좀더 수월하게 해주는 패키지라고 말씀 드릴 수 있을 것 같습니다.</description>
+  Shiny vs Rshinydashboard shiny의 경우엔 navigation 옵션으로 설정해서 영역을 나눠야 하는 불편함이 있지만, shinydashboard는 해당 부분을 좀더 수월하게 해주는 패키지라고 말씀 드릴 수 있을 것 같습니다.</description>
     </item>
     
     <item>
@@ -31,9 +31,9 @@ Header 영역은 Title 및 위젯등을 추가가능하며, sidebar영역은 보
       
       <guid>/blog/post/rshinydashboard-storyboard-2/</guid>
       <description>스토리를 작성하기에 앞서 Shinydashboard는 R에서 wep application을 구현하게 하는 패키지인 shiny기능을 활용하여 대시보드로 쉽게 구현이 가능하게 해주는 패키지(package) 입니다. 그래서, shinydashboard를 구현하기 이전에 shiny의 기본 구조를 이해한다면, 한결 빠르고 쉽게 구현이 가능합니다. 그럼 shiny의 기본 구현방법을 알아볼게요. shiny는 기본적으로 ui와 server로 구현되어 있습니다.
-ui에서 입력을 하면, server에서 ui에서 받은 입력으로 실행을 하는데요, 기본 코드는 아래와 같습니다. (아래 코드는 shiny 기본 페이지에서 가져왔습니다. 링크: 바로가기 )
+ ui에서 입력을 하면, server에서 ui에서 받은 입력으로 실행을 하는데요, 기본 코드는 아래와 같습니다. (아래 코드는 shiny 기본 페이지에서 가져왔습니다. 링크: 바로가기 )
 ui영역 예시
-# Define UI for app that draws a histogram ----ui &amp;lt;- fluidPage(titlePanel(&amp;quot;안녕하세요&amp;quot;), #타이틀 입력## 사이드바 영역에 sliderInput 만들기#사이드바 레이아웃 선언sidebarLayout( ##사이드바 패널에 들어갈 내용 생성sidebarPanel( # sliderInput 생성 sliderInput(inputId = &amp;quot;bins&amp;quot;,label = &amp;quot;Number of bins:&amp;quot;,min = 1,max = 50,value = 30)),# 메인 패널에 들어갈 내용 생성 mainPanel(# 히스토그램 구현하기plotOutput(outputId = &amp;quot;distPlot&amp;quot;))))server 영역 예시</description>
+# Define UI for app that draws a histogram ---- ui &amp;lt;- fluidPage( titlePanel(&amp;quot;안녕하세요&amp;quot;), #타이틀 입력 ## 사이드바 영역에 sliderInput 만들기 #사이드바 레이아웃 선언 sidebarLayout( ##사이드바 패널에 들어갈 내용 생성 sidebarPanel( # sliderInput 생성 sliderInput(inputId = &amp;quot;bins&amp;quot;, label = &amp;quot;Number of bins:&amp;quot;, min = 1, max = 50, value = 30) ), # 메인 패널에 들어갈 내용 생성 mainPanel( # 히스토그램 구현하기 plotOutput(outputId = &amp;quot;distPlot&amp;quot;) ) ) ) server 영역 예시</description>
     </item>
     
     <item>

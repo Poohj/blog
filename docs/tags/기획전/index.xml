@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>기획전 on Data Glory</title>
+    <link>/blog/tags/%EA%B8%B0%ED%9A%8D%EC%A0%84/</link>
+    <description>Recent content in 기획전 on Data Glory</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 29 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/blog/tags/%EA%B8%B0%ED%9A%8D%EC%A0%84/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>[성과분석] 더제이수</title>
+      <link>/blog/post/report-thejsoo-20191029/</link>
+      <pubDate>Tue, 29 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/post/report-thejsoo-20191029/</guid>
+      <description>주요요약 1. 트래픽 
+ 더제이수의 경우 타 프로모션과 다르게 진행경과일수가 진행됨에 따라 pv 및 uv수치가 보합세 혹은 증가세를 나타냄. 5회차에 진행했던 엔비룩과 비교하였을 시, 트래픽 측면패턴에서 증가패턴을 보임.  2.</description>
+    </item>
+    
+  </channel>
+</rss>
